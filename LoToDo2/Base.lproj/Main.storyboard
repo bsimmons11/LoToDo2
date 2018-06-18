@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M3r-0q-gdb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M3r-0q-gdb">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -32,7 +32,14 @@
                             <outlet property="delegate" destination="DYh-8V-5sP" id="gZR-dQ-u2G"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="LoToDo" id="Ia0-Zz-MyO"/>
+                    <navigationItem key="navigationItem" title="LoToDo" id="Ia0-Zz-MyO">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="oDe-BP-pQt">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="addButtonPressed:" destination="DYh-8V-5sP" id="gXE-mU-XKC"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Aba-dS-ao5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
