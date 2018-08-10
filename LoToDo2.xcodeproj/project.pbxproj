@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40F1ECE70B0EFE01F612F80B /* Pods_LoToDo2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8C7836A8D735C914A68E06E /* Pods_LoToDo2.framework */; };
 		9544A9E620D9790E009E2C57 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9544A9E420D9790E009E2C57 /* DataModel.xcdatamodeld */; };
 		954D272A20AB023800A05F8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954D272920AB023800A05F8C /* AppDelegate.swift */; };
 		954D272C20AB023800A05F8C /* ToDoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954D272B20AB023800A05F8C /* ToDoListViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		689834793B59641BA3BE5B4C /* Pods-LoToDo2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoToDo2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LoToDo2/Pods-LoToDo2.debug.xcconfig"; sourceTree = "<group>"; };
 		9544A9E520D9790E009E2C57 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		954D272620AB023800A05F8C /* LoToDo2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoToDo2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		954D272920AB023800A05F8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		954D273320AB023900A05F8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		954D273520AB023900A05F8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		95BF6D5020FCBC4200AA270F /* CategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
+		B8C7836A8D735C914A68E06E /* Pods_LoToDo2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoToDo2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCCD5353810572447E20DEA9 /* Pods-LoToDo2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoToDo2.release.xcconfig"; path = "Pods/Target Support Files/Pods-LoToDo2/Pods-LoToDo2.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40F1ECE70B0EFE01F612F80B /* Pods_LoToDo2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				954D272820AB023800A05F8C /* LoToDo2 */,
 				954D272720AB023800A05F8C /* Products */,
+				F54404CA4D76020531214BC1 /* Pods */,
+				EF8F76978A6F4F9CEC981783 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +109,23 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		EF8F76978A6F4F9CEC981783 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B8C7836A8D735C914A68E06E /* Pods_LoToDo2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F54404CA4D76020531214BC1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				689834793B59641BA3BE5B4C /* Pods-LoToDo2.debug.xcconfig */,
+				BCCD5353810572447E20DEA9 /* Pods-LoToDo2.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -109,9 +133,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 954D273820AB023900A05F8C /* Build configuration list for PBXNativeTarget "LoToDo2" */;
 			buildPhases = (
+				6019CAFD16B42E29FF3A5103 /* [CP] Check Pods Manifest.lock */,
 				954D272220AB023800A05F8C /* Sources */,
 				954D272320AB023800A05F8C /* Frameworks */,
 				954D272420AB023800A05F8C /* Resources */,
+				4608EFC09B5E5D048E6D615F /* [CP] Embed Pods Frameworks */,
+				7DC4E88FC9BE29822A6086EB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,6 +194,62 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4608EFC09B5E5D048E6D615F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LoToDo2/Pods-LoToDo2-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LoToDo2/Pods-LoToDo2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6019CAFD16B42E29FF3A5103 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LoToDo2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7DC4E88FC9BE29822A6086EB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LoToDo2/Pods-LoToDo2-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		954D272220AB023800A05F8C /* Sources */ = {
@@ -318,15 +401,13 @@
 		};
 		954D273920AB023900A05F8C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 689834793B59641BA3BE5B4C /* Pods-LoToDo2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y56MS5GDTQ;
 				INFOPLIST_FILE = LoToDo2/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lorux.LoToDo2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -336,15 +417,13 @@
 		};
 		954D273A20AB023900A05F8C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCCD5353810572447E20DEA9 /* Pods-LoToDo2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y56MS5GDTQ;
 				INFOPLIST_FILE = LoToDo2/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lorux.LoToDo2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
